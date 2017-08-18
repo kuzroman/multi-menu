@@ -1,0 +1,123 @@
+@colorHover: #16B67F;
+
+.options__cat{
+    padding: 20px 20px 5px;
+
+    &__title{
+        margin-bottom: 15px;
+    }
+
+    &.active{
+
+        & .options__cat__list{
+            display: none;
+        }
+
+        & .options__cat__list.active{
+            display: block;
+
+            & > .options__cat__list{
+                display: block;
+            }
+        }
+
+        & .options__cat__list.chosen{
+
+            & > .options__cat__list.active{
+                display: block;
+            }
+            & > .options__cat__list{
+                display: none;
+            }
+        }
+    }
+
+    &__list{
+        margin-left: 0;
+
+        & .options__cat__list{
+            margin-left: 20px;
+        }
+
+        &.hide{
+            display: none;
+        }
+
+        &.active{
+            margin-left: 0;
+        }
+
+        &.chosen{
+            position: relative;
+
+            &:before{
+                content: '\25BC';
+                width: 10px;
+                height: 10px;
+                display: block;
+                position: absolute;
+                left: -10px;
+                top: 3px;
+                background-size: 8px;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &__text{
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &.medium{
+            font-weight: bold;
+        }
+
+        &.hide{
+            display: none;
+        }
+
+        &.active{
+            font-weight: bold;
+        }
+
+        &:hover{
+            color: @colorHover;
+        }
+    }
+
+    &__all{
+        margin-bottom: 15px;
+        position: relative;
+        cursor: pointer;
+        display: none;
+
+        &:hover{
+            color: @colorHover;
+        }
+
+        &:before{
+            content: '\25BC';
+            width: 10px;
+            height: 10px;
+            display: block;
+            position: absolute;
+            left: -10px;
+            top: 3px;
+            background-size: 8px;
+            transform: rotate(90deg);
+        }
+
+        &:hover{
+
+            &:before{
+                content: '\25BC';
+                background-size: 8px;
+            }
+        }
+    }
+
+    &__more{
+        margin-bottom: 15px;
+    }
+
+}

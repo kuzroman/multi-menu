@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<!--
+ {# options__cat__list & options__cat__text - исп-ем в js #}
+{# первые 2 уровня показывать не полностью, скрываем их с пом-ю hide js-options-hidden #}
+ -->
+<div class="options__cat js-options-category">
+    <div class="options__cat__title options__title js-options-switcher-visibility active">Категории</div>
+
+    <div class="js-options-list">
+        <div class="options__cat__all js-options-category-all">Все категории</div>
+
+        <div class="options__cat__list">
+            <div class="options__cat__text medium">Потребительские товары</div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">FMCG <span class="options__count subtitle">800</span></div>
+
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">FMCG 3й уровень</div>
+
+                    <div class="options__cat__list hide">
+                        <div class="options__cat__text">FMCG 4й уровень</div>
+
+                        <div class="options__cat__list hide">
+                            <div class="options__cat__text">FMCG 5й уровень</div>
+                        </div>
+                        <div class="options__cat__list hide">
+                            <div class="options__cat__text">FMCG 5й уровень больше</div>
+                        </div>
+                        <div class="options__cat__list hide">
+                            <div class="options__cat__text">FMCG 5й уровень очень длинный</div>
+                        </div>
+                    </div>
+                    <div class="options__cat__list hide">
+                        <div class="options__cat__text">FMCG 4й уровень больше</div>
+                    </div>
+                    <div class="options__cat__list hide">
+                        <div class="options__cat__text">FMCG 4й уровень очень длинный</div>
+                    </div>
+                </div>
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">FMCG 3й уровень больше</div>
+                </div>
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">FMCG 3й уровень очень длинный</div>
+                </div>
+            </div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">Авто <span class="options__count">67</span></div>
+
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">Авто 3й уровень</div>
+                </div>
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">Авто 3й уровень больше</div>
+                </div>
+                <div class="options__cat__list hide">
+                    <div class="options__cat__text">Авто 3й уровень очень длинный</div>
+                </div>
+            </div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">
+                    Быт. техника, электроника <span class="options__count">1 234</span>
+                </div>
+            </div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">
+                    Детские товары <span class="options__count">234</span>
+                </div>
+            </div>
+
+            <!-- не больше 4х -->
+            <div class="options__cat__list hide js-options-hidden">
+                <div class="options__cat__text">Спортивные товары <span class="options__count">34</span></div>
+            </div>
+            <div class="options__cat__list hide js-options-hidden">
+                <div class="options__cat__text">DIY <span class="options__count">456</span></div>
+            </div>
+        </div>
+
+        <div class="options__cat__list">
+            <div class="options__cat__text medium">Селькое хозяйство</div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">Технологии производства <span class="options__count">800</span></div>
+            </div>
+
+            <div class="options__cat__list">
+                <div class="options__cat__text">Сельскохозяйственная техника <span class="options__count">67</span></div>
+            </div>
+        </div>
+
+        <div class="options__cat__list">
+            <div class="options__cat__text medium">Красота и здоровье</div>
+            <div class="options__cat__list">
+                <div class="options__cat__text">Медицинское оборудование <span class="options__count">500</span></div>
+            </div>
+        </div>
+
+        <!-- не больше 3х -->
+        <div class="options__cat__list hide js-options-hidden">
+            <div class="options__cat__text medium">Парапсихология</div>
+            <div class="options__cat__list">
+                <div class="options__cat__text">Гадание по слюне <span class="options__count">500</span></div>
+            </div>
+        </div>
+
+        <div class="options__type__more-button options__cat__more js-options-more">Показать еще</div>
+
+    </div>
+</div>
+
+</body>
+</html>
